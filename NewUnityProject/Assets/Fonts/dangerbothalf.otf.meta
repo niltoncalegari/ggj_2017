@@ -1,0 +1,21 @@
+fileFormatVersion: 2
+guid: 311a832503f2f78429ca667eb7e56d9e
+timeCreated: 1485015653
+licenseType: Free
+TrueTypeFontImporter:
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontName: Dangerbot Halftone
+  fontNames:
+  - Dangerbot Halftone
+  fallbackFontReferences: []
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

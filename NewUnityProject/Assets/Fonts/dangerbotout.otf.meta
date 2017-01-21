@@ -1,0 +1,21 @@
+fileFormatVersion: 2
+guid: 919bd272147f7424db180e00da0b3495
+timeCreated: 1485015654
+licenseType: Free
+TrueTypeFontImporter:
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontName: Dangerbot Outline
+  fontNames:
+  - Dangerbot Outline
+  fallbackFontReferences: []
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

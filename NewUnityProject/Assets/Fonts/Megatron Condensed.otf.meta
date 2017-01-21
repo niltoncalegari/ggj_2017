@@ -1,0 +1,22 @@
+fileFormatVersion: 2
+guid: ac1a64743c03d1945b705197ee28cc04
+timeCreated: 1485015654
+licenseType: Free
+TrueTypeFontImporter:
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontName: Megatron Condensed
+  fontNames:
+  - Megatron Condensed
+  fallbackFontReferences:
+  - {fileID: 12800000, guid: a9730035083b5dd4795dc015c47e1cbe, type: 3}
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

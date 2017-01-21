@@ -1,0 +1,21 @@
+fileFormatVersion: 2
+guid: 486e9e2bee236c240baa87881a69cbee
+timeCreated: 1485015653
+licenseType: Free
+TrueTypeFontImporter:
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontName: Dangerbot Italic
+  fontNames:
+  - Dangerbot Italic
+  fallbackFontReferences: []
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

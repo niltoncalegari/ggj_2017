@@ -1,0 +1,21 @@
+fileFormatVersion: 2
+guid: 03278b9be9765fd498806bd7da191d36
+timeCreated: 1485015653
+licenseType: Free
+TrueTypeFontImporter:
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontName: Megatron Hollow
+  fontNames:
+  - Megatron Hollow
+  fallbackFontReferences: []
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -20,27 +20,12 @@ public class PlayerController : MonoBehaviour {
     }
 
     void FixedUpdate () {
-        if (GameControl.instance.lifes > 0) {
-            movePlayer();
-        } else {
-            rb.velocity = Vector3.zero;
-        }
         
-    }
-
-    void OnCollisionEnter (Collision other)
-    {
-        if (other.gameObject.tag == "Enemy") {
-            GameControl.instance.takeDamage ();
-        }
-    }
-
-    void movePlayer()
-    {
         float moveHorizontal = Input.GetAxis("Horizontal");
         float moveVertical = Input.GetAxis("Vertical");
 
         Vector3 movement = new Vector3 (moveHorizontal, 0.1f, moveVertical);
+        //Debug.Log(movement);
         rb.velocity = movement * speed;
 
         rb.position = new Vector3 (
@@ -48,5 +33,7 @@ public class PlayerController : MonoBehaviour {
             0.0f,
             Mathf.Clamp(rb.position.z, boundery.zMin, boundery.zMax)
         );
+
+        //rb.rotation = Quaternion.Euler (0.0f, 0.0f, rb.velocity.x * -tilt);
     }
 }

@@ -1,0 +1,22 @@
+fileFormatVersion: 2
+guid: c7afad171dbcf9f489e56823f269cbd2
+timeCreated: 1485015654
+licenseType: Free
+TrueTypeFontImporter:
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontName: Megatron Hollow Condensed
+  fontNames:
+  - Megatron Hollow Condensed
+  fallbackFontReferences:
+  - {fileID: 12800000, guid: 96bb9fec4e627674cb68a32a3775056e, type: 3}
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

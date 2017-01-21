@@ -1,0 +1,21 @@
+fileFormatVersion: 2
+guid: 0a2cf65a628c4e74f9573102e78eb84c
+timeCreated: 1485015653
+licenseType: Free
+TrueTypeFontImporter:
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontName: Megatron
+  fontNames:
+  - Megatron
+  fallbackFontReferences: []
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
