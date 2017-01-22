@@ -27,11 +27,12 @@ public class PlayerController : MonoBehaviour {
     public Transform shotSpawnR;
 
     private float nextFire = 0.0f;
-
+    private Animator anim;
     private Rigidbody rb;
 
     void Start () {
         rb = GetComponent<Rigidbody>();
+        anim = GetComponent<Animator> ();
     }
     void FixedUpdate () {
         if (GameControl.instance.lifes > 0) {
@@ -70,6 +71,9 @@ public class PlayerController : MonoBehaviour {
     {
         float moveHorizontal = Input.GetAxis("Horizontal");
         float moveVertical = Input.GetAxis("Vertical");
+
+        anim.SetFloat("moveX", moveHorizontal);
+        anim.SetFloat("moveY", moveVertical);
 
         Vector3 movement = new Vector3 (moveHorizontal, 0.1f, moveVertical);
         rb.velocity = movement * speed;
