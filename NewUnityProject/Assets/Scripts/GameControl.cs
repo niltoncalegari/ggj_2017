@@ -40,7 +40,9 @@ public class GameControl : MonoBehaviour {
 	public void DiePlayer(Text Button){
 		health--;
 		Button.text = "x" + health.ToString();
+
 		if (health == 0) {
+            LifeUp (3);
 			LoadScene ("GameOver");
 		}
 	}
@@ -48,8 +50,8 @@ public class GameControl : MonoBehaviour {
 	public void LoadScene (string SceneName){
 		SceneManager.LoadScene (SceneName);
 	}
-	public void LifeUp(){
-		health++;
+    public void LifeUp(int healthAdd){
+        health += healthAdd;
 	}
 
     public void takeDamage()
@@ -59,7 +61,7 @@ public class GameControl : MonoBehaviour {
 
 	public void getLife(int lifeadd)
     {
-		lifes = lifeadd;
+		lifes += lifeadd;
     }
 
 }
