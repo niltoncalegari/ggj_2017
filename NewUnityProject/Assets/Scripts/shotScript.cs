@@ -19,6 +19,7 @@ public class shotScript : MonoBehaviour {
         if (other.gameObject.tag == "Enemy") {
             Destroy (other.gameObject);
             Destroy (gameObject);
+            GameControl.instance.addPoints (10);
         }
 
         if (other.gameObject.tag == "Border") {
