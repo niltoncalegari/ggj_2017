@@ -22,9 +22,9 @@ public class EnemyAI : MonoBehaviour
 	{
 		
 		enemy.transform.rotation = Quaternion.Euler (90f, 0f, 0f);
-		if (Input.GetKeyDown (KeyCode.Space)) {
+		//if (Input.GetKeyDown (KeyCode.Space)) {
 			setGoal ();
-		}
+		//}
 	}
 
 	void setGoal ()
