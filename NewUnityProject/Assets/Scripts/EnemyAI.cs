@@ -7,7 +7,6 @@ public class EnemyAI : MonoBehaviour
 {
 
     private GameObject goal;
-	//public GameObject enemy;
 	private NavMeshAgent nav;
 
 	void Awake ()
