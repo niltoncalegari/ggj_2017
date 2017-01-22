@@ -3,24 +3,29 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.AI;
 
-public class EnemyAI : MonoBehaviour {
+public class EnemyAI : MonoBehaviour
+{
 
-    public Transform goal;
-       
-    void Start ()
-    {
-        
-    }
+    private GameObject goal;
+	//public GameObject enemy;
+	private NavMeshAgent nav;
 
-    void Update ()
-    {
-        if(Input.GetKeyDown(KeyCode.Space)) {
-            setGoal();
-        }
-    }
+	void Awake ()
+	{
+        if (goal == null) {
+            goal = GameObject.FindGameObjectWithTag ("Player");
+		}
+		nav = GetComponent<NavMeshAgent> ();
+	}
 
-    void setGoal()
-    {
-        gameObject.GetComponent<NavMeshAgent> ().SetDestination(goal.position);
-    }
+	void Update ()
+	{
+        gameObject.transform.rotation = Quaternion.Euler (90f, 0f, 0f);
+		setGoal ();
+	}
+
+	void setGoal ()
+	{           
+        nav.SetDestination (goal.transform.position);
+	}
 }

@@ -19,6 +19,14 @@ public class PlayerController : MonoBehaviour {
 	public float speed = 4f;
     public Boundery boundery;
 	public GameObject lifebar;
+    public float fireRate = 0.5f;
+    public GameObject shot;
+    public Transform shotSpawnU;
+    public Transform shotSpawnD;
+    public Transform shotSpawnL;
+    public Transform shotSpawnR;
+
+    private float nextFire = 0.0f;
 
     private Rigidbody rb;
 
@@ -71,5 +79,26 @@ public class PlayerController : MonoBehaviour {
             0.0f,
             Mathf.Clamp(rb.position.z, boundery.zMin, boundery.zMax)
         );
+
+        if (Input.GetKey(KeyCode.LeftArrow) && Time.time > nextFire) {
+            nextFire = Time.time + fireRate;
+            Instantiate (shot, shotSpawnL.position, shotSpawnL.rotation);
+        }
+
+        if (Input.GetKey(KeyCode.RightArrow) && Time.time > nextFire) {
+            nextFire = Time.time + fireRate;
+            Instantiate (shot, shotSpawnR.position, shotSpawnR.rotation);
+        }
+
+        if (Input.GetKey(KeyCode.UpArrow) && Time.time > nextFire) {
+            nextFire = Time.time + fireRate;
+            Instantiate (shot, shotSpawnU.position, shotSpawnU.rotation);
+        }
+
+        if (Input.GetKey(KeyCode.DownArrow) && Time.time > nextFire) {
+            nextFire = Time.time + fireRate;
+            Instantiate (shot, shotSpawnD.position, shotSpawnD.rotation);
+        }
+
     }
 }
